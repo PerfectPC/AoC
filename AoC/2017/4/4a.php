@@ -1,0 +1,9 @@
+<?php
+	error_reporting(E_ERROR | E_WARNING | E_PARSE);
+	$input = file("input.txt",FILE_IGNORE_NEW_LINES);
+		foreach ($input as $key=>$value) {
+			$row[$key] = explode(" ",$value);
+			if(count($row[$key])==count(array_unique($row[$key]))) $valid++;
+		}
+	echo $valid."\n\r";
+?>
