@@ -1,5 +1,5 @@
 <?php
-	$time = hrtime(true);
+	// $time = hrtime(true);
 	error_reporting(E_ERROR | E_WARNING | E_PARSE);
 	$input = file("input.txt",FILE_IGNORE_NEW_LINES);
 	$split=0;
@@ -20,4 +20,5 @@
 	// print_r($line);
 	echo ($split)."\n\r";
 	// echo (hrtime(true)-$time)/1000000000;
+
 ?>
