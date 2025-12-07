@@ -2,7 +2,6 @@
 	// $time = hrtime(true);
 	error_reporting(E_ERROR | E_WARNING | E_PARSE);
 	$input = file("input.txt",FILE_IGNORE_NEW_LINES);
-	// $split=0;
 		foreach ($input as $key=>$value) {
 			$value = str_replace(".","0",$value);
 			$line[$key] = str_split($value);
@@ -21,4 +20,5 @@
 	// print_r($line);
 	echo (array_sum(array_last($line)))."\n\r";
 	// echo (hrtime(true)-$time)/1000000000;
+
 ?>
